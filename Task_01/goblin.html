@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+  </head>
+  <body
+    class="min-h-screen bg-green-900 text-white flex flex-col"
+    style="
+      background-image: linear-gradient(
+        to right,
+        #345d0c,
+        #4c5906,
+        #5e550c,
+        #6b5118,
+        #754d25
+      );
+    "
+  >
+  <header class="flex justify-between items-center p-6">
+    <div class="text-2xl font-bold">COC - Stats</div>
+    <nav class="space-x-6" style="transition: color 3s ease;">
+      <a href="index.html" class="hover:text-zinc-300">Home</a>
+      <a href="archer.html" class="hover:text-zinc-300">Archer</a>
+      <a href="pekka.html" class="hover:text-zinc-300">Pekka</a>
+      <a href="goblin.html" class="hover:text-zinc-300">Goblin</a>
+      <a href="witch.html" class="hover:text-zinc-300">Night Witch</a>
+      <a href="hogRider.html" class="hover:text-zinc-300">Hog Rider</a>
+    </nav>
+  </header>
+
+    <div class="flex flex-1 items-center justify-between px-6">
+      <div class="space-y-4" style="position: fixed; right: 900px">
+        <div class="space-y-1">
+          <p class="text-zinc-400">#1 Trending</p>
+          <p class="font-semibold">Lead Supercell</p>
+          <h1 class="text-5xl font-bold">GOBLIN</h1>
+        </div>
+        <p class="text-zinc-300 max-w-md">
+          "Goblins" are small, green-skinned
+          creatures with a penchant for loot. They excel at quickly navigating
+          bases to raid storages and collectors, making them efficient for
+          resource gathering but vulnerable in combat due to their low health
+          and defense.
+        </p>
+
+        <div class="flex space-x-4">
+          <button
+            class="py-2 px-4 rounded-lg"
+            style="background-color: #94bf49"
+          >
+            COMPARE
+          </button>
+          <button
+            class="py-2 px-4 rounded-lg flex items-center space-x-2"
+            style="background-color: #94bf49"
+          >
+            <span>WATCH GAMEPLAY</span>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1.5-11.5a1 1 0 011.5.87v4.26a1 1 0 01-1.5.87L6.5 11.87a1 1 0 010-1.74l2.5-1.63z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div>
+        <img
+          src="images/goblin.png"
+          alt="Goblin character"
+          class="max-w-xs"
+          style="position: fixed; left: 700px; max-width: 30rem; top: 260px"
+        />
+      </div>
+    </div>
+
+    <div class="icon-container">
+      <div class="absolute left-6 top-1/2 transform -translate-y-1/2 space-y-4">
+        <a href="#" class="block text-zinc-400 hover:text-zinc-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 2.163c-5.514 0-10 4.486-10 10 0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54v-2.2c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.873h2.773l-.444 2.89h-2.329v6.988c4.781-.75 8.438-4.887 8.438-9.878 0-5.514-4.486-10-10-10z"
+            />
+          </svg>
+        </a>
+        <a href="#" class="block text-zinc-400 hover:text-zinc-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19.615 3.184c-.81-.81-1.888-1.184-3.184-1.184h-8.862c-1.296 0-2.374.374-3.184 1.184-.81.81-1.184 1.888-1.184 3.184v8.862c0 1.296.374 2.374 1.184 3.184.81.81 1.888 1.184 3.184 1.184h8.862c1.296 0 2.374-.374 3.184-1.184.81-.81 1.184-1.888 1.184-3.184v-8.862c0-1.296-.374-2.374-1.184-3.184zm-10.615 12.816v-8l8 4-8 4z"
+            />
+          </svg>
+        </a>
+        <a href="#" class="block text-zinc-400 hover:text-zinc-300">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.627 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385-.113-.975-.215-2.475.045-3.54.234-.975 1.515-6.225 1.515-6.225s-.385-.77-.385-1.91c0-1.79 1.045-3.13 2.345-3.13 1.105 0 1.64.83 1.64 1.825 0 1.11-.705 2.77-1.065 4.3-.3 1.27.63 2.31 1.87 2.31 2.245 0 3.975-2.37 3.975-5.775 0-3.015-2.165-5.13-5.265-5.13-3.585 0-5.68 2.69-5.68 5.47 0 1.095.42 2.27.945 2.91.105.12.12.225.09.345-.09.375-.3 1.195-.345 1.36-.06.225-.195.27-.45.165-1.68-.78-2.73-3.225-2.73-5.19 0-4.215 3.06-8.1 8.82-8.1 4.62 0 8.205 3.3 8.205 7.705 0 4.59-2.895 8.295-6.915 8.295-1.35 0-2.62-.705-3.045-1.515l-.825 3.15c-.3 1.095-1.125 2.465-1.68 3.3 1.26.375 2.58.585 3.96.585 6.627 0 12-5.373 12-12s-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
